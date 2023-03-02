@@ -1,0 +1,22 @@
+    {% extends "base.html" %}
+
+    <script src="https://kit.fontawesome.com/b4de34f81a.js" crossorigin="anonymous"></script>
+
+    {% block content %} 
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold">About Me</i></h1>
+            <div class="col-lg-6 mx-auto">
+
+            <p class="lead mb-4">My name is Graham, Im a Computing Engineer with a B.Sc Hons in Computing<br>
+            Im from Dublin, Ireland <i class="fa-sharp fa-solid fa-user"></i><br>
+            I have Interests in Technology, Sport and Travel.</p><br>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            </div>
+            </div>
+            <div class="text-center">
+                <img src="{{url_for('static', filename='img/graham.jpeg')}}" class="rounded" style="width:25%; height:25%" />
+            </div>
+        </div>
+        
+    {% endblock content %}
+
