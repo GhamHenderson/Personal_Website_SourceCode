@@ -4,13 +4,13 @@
     
  <!-- Page Header-->
  
- <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/edin.jpg') }}')">
+ <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/vision.jpg') }}')">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>Welcome</h1>
-                    <span class="subheading">Graham Henderson Portfolio Site</span>
+                    <h1>Attention AI</h1>
+                    <span class="subheading">an Attention Evaluation System</span>
                 </div>
             </div>
         </div>
@@ -19,15 +19,17 @@
 <!-- Main Content-->
 <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
+        <a href="https://github.com/GhamHenderson/Attention-Evaluation-System" class="btn btn-primary ">Link to Download</a>
+
+        <div class="col-md-10 col-lg-8 col-xl-7 pb-5 justify-content-center">
+
+
             <!-- Post preview-->
             <div class="post-preview">
-                    <h2 class="post-title">Welcome to my Portfolio Website. <br>
-                    Please go to the Projects tab to view some example projects.</h2>
-                <p class="post-meta">
-                    Posted by
-                    <a href="{{ url_for('about')}}">Graham Henderson</a>
-                    on March 1st 2023
-                </p>
+                    <h2 class="post-title pt-5">Attention AI is built for learners who want to track there attention levels. <br><br>
+                    This Technology has potential to be used in Classroom Learning, Driver Safety and many more use-cases</h2><br>
             </div>
+            <img src="{{url_for('static', filename='img/highlighteye.jpg')}}" class="rounded" style="width:100%; height:70%" />
+</div>
+
 {% endblock content %}
